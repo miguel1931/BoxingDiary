@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel='stylesheet' href='styles.css'>
+<script
+  src="http://code.jquery.com/jquery-3.3.1.js"
+  integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  crossorigin="anonymous"></script>
+
+</head>
+<script>
+
+</script>
+<body>
+<h1>C B D<h1>
+<div id="Menu">
+  <div style = "float: left;"><a id="Session" href="#" class="action-button shadow animate red">New Session</a></div>
+  <div style = "clear: both;"><a id="UploadP" href="#" class="action-button shadow animate blue">Upload Punches</a></div>
+  <div style = "clear: both;"><a id="UploadHrt" href="#" class="action-button shadow animate red">Upload HRT</a></div>
+  <div style = "clear: both;"><a id="Last" href="#" class="action-button shadow animate pink">Last Session</a></div>
+  <div style = "clear: both;"><a id="Evolution" href="#" class="action-button shadow animate green">Evolution</a></div>
+  <div style = "clear: both;"><a id="about" href="#" class="action-button shadow animate yellow">About</a></div>
+</div>
+
+
+<div id="DivSession" style="display:none;">
+
+</div>
+
+<div id="DivUploadP" style="display:none;">
+
+  </div>
+
+<div id="DivUploadHRT" style="display:none;">
+  </div>
+<div id="DivEvolution" style="display:none;" >
+  </div>
+
+<div id="DivAbout" style="display:none;" >
+<div style = "float: left;"><img class='back' src='izq.png' width="20%" height="20%" ></img></div>
+     <div style = "clear: both;">  C B D is an application which allow users to upload ...
+        
+     </div>
+         
+</div>
+
+  
+</body>
+
+
+</html>
+
+<script>
+
+$('#UploadP').on('click',function(){
+    $('#Menu').hide();
+    $('#DivUploadP').show();
+
+});
+
+$('#UploadHrt').on('click',function(){
+    $('#Menu').hide();
+    $('#DivUploadHRT').show();
+});
+
+$('#Evolution').on('click',function(){
+    $('#Menu').hide();
+    $('#DivEvolution').show();
+});
+
+$('#about').on('click',function(){
+    $('#Menu').hide();
+    $('#DivAbout').show();
+});
+
+$('#about').on('click',function(){
+    $('#Menu').hide();
+    $('#DivAbout').show();
+});
+
+$('.back').on('click',function(){
+    $(this).parent().parent().hide();
+    $('#Menu').show();
+
+})
+
+</script>

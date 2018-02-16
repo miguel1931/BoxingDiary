@@ -17,10 +17,10 @@ body
   float: left;
 	border-radius: 10px;
 	font-family: 'Pacifico', cursive;
-	font-size: 25px;
+	font-size: 10vw;
 	color: #FFF;
 	text-decoration: none;	
-    width:500px;
+    width:100%;
 }
 
 .blue
